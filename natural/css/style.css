@@ -1,0 +1,866 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Noto Sans Regular';
+    src: url(../fonts/static/NotoSans-Regular.ttf);
+}
+@font-face {
+    font-family: 'Roboto Medium';
+    src: url(../fonts/static/Roboto-Medium.ttf);
+}
+@font-face {
+    font-family: 'Noto Sans ExtraBold';
+    src: url(../fonts/static/NotoSans-ExtraBold.ttf);
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: 'Noto Sans Medium';
+    src: url(/fonts/NotoSans-Medium.ttf);
+}
+@font-face {
+    font-family: 'Poppins-SemiBold';
+    src: url(../fonts/Poppins-SemiBold.ttf);
+}
+@font-face {
+    font-family: 'Noto Sans Bold';
+    src: url(../fonts/NotoSans-Bold.ttf);
+}
+@font-face {
+    font-family: 'Noto Sans Semibold';
+    src: url(../fonts/static/NotoSans-SemiBold.ttf);
+}
+
+ul { list-style: none; }
+a { text-decoration: none; }
+
+/* ========== ДЕСКТОП (1440px) ========== */
+.container, .container-men, .container-yellow, .container-footer {
+    width: 1440px;
+    margin: 0 auto;
+    background-color: #FFF8F8;
+}
+
+.container { height: 1143px; }
+.container-men { height: 1506px; }
+.container-yellow {
+    width: 1440px;
+    height: 627px;
+    background: #fba22b;
+    position: absolute;
+    top: 3208px;
+}
+.container-footer {
+    width: 1440px;
+    height: 786px;
+    background: #0a0c14;
+    margin: 3866px auto 0;
+}
+
+/* Шапка */
+.header_list {
+    display: flex;
+    gap: 43px;
+    padding-left: 649px;
+    padding-top: 48px;
+}
+.header_list a {
+    font-family: 'Noto Sans Regular', sans-serif;
+    color: #2A2940;
+    font-size: 18px;
+}
+.header_list img { width: 18px; height: 20px; }
+.header__auth {
+    border: none;
+    background-color: #FE0000;
+    color: #FFF;
+    width: 102px;
+    height: 40px;
+    font-size: 18px;
+    font-family: 'Roboto Medium', sans-serif;
+    border-radius: 8px;
+    position: absolute;
+    margin-left: 1258px;
+    top: 40px;
+    cursor: pointer;
+}
+
+/* Декоративные элементы */
+.frame, .serum_img, .element, .frame2, .girls,
+.spiral, .elips, .arrow-w, .arrow-red,
+.foto3, .serum-photo, .photo-gilsmaska,
+.yzor-vector, .border-vertik, .border-vertik2,
+.border-vertik3, .border-gorizantalno,
+.filter-wrapper-border, .filter-item-plus,
+.covachki, .covachki2, .arrow-ww, .arrow-redd {
+    position: absolute;
+}
+
+.frame { width: 313px; height: 558px; left: 79px; top: 150px; }
+.serum_img { width: 313px; height: 558px; left: 79px; top: 168px; }
+.element { width: 87px; height: 87px; left: 478px; top: 217px; }
+.frame2 { width: 193px; height: 344px; left: 437px; top: 380px; }
+.girls { width: 193px; height: 344px; left: 423px; top: 382px; }
+.spiral { left: 1205px; top: 217px; }
+.elips { left: 1298px; top: 432px; }
+.arrow-w { left: 1175px; top: 530px; }
+.arrow-red { left: 1270px; top: 530px; }
+
+/* Текст */
+.text-content { position: absolute; top: 216px; }
+.infa {
+    font-family: 'Noto Sans ExtraBold', sans-serif;
+    font-size: 72px;
+    color: #FFA41C;
+    padding-left: 725px;
+    margin-top: -5px;
+}
+.text {
+    font-family: 'Noto Sans ExtraBold', sans-serif;
+    font-size: 72px;
+    color: #2A2940;
+    padding-left: 725px;
+    line-height: 120%;
+    margin-top: -10px;
+    text-transform: capitalize;
+}
+.description-infa {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    padding-left: 727px;
+    color: #545465;
+    position: absolute;
+    top: 491px;
+}
+.description { line-height: 30px; }
+.buy {
+    font-size: 24px;
+    color: #ff0000;
+    padding-left: 725px;
+    padding-top: 505px;
+    position: absolute;
+    display: flex;
+}
+.switch-list {
+    display: flex;
+    position: absolute;
+    gap: 14px;
+    top: 657px;
+    padding-left: 727px;
+}
+
+/* Три блока */
+.blok {
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    gap: 40px;
+    position: absolute;
+    top: 776px;
+    left: 81px;
+}
+.blok > div {
+    background-color: #ffeef1;
+    border-radius: 5px;
+    padding: 50px 30px 44px 34px;
+    position: relative;
+    height: 217px;
+}
+.feature_card_title, .title-v, .title-t {
+    font-family: 'Noto Sans ExtraBold', sans-serif;
+    font-size: 24px;
+    color: #2A2940;
+}
+.feature_card_subtitle, .dicoration {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #545465;
+    margin: 10px 0;
+}
+.feature_card_link {
+    font-size: 20px;
+    font-family: 'Noto Sans Medium', sans-serif;
+    color: #2a2940;
+    letter-spacing: 1px;
+}
+.objects, .makeup, .maski { position: absolute; right: 30px; top: 30px; width: 80px; }
+
+/* Второй блок */
+.girls_photo {
+    border-radius: 5px;
+    width: 439px;
+    height: 455px;
+    position: absolute;
+    top: -74px;
+    left: 0;
+}
+.title_text {
+    position: absolute;
+    font-family: 'Noto Sans ExtraBold', sans-serif;
+    top: -73px;
+    left: 499px;
+    font-size: 48px;
+    color: #2a2940;
+    line-height: 64px;
+}
+.tyu { color: #FFA41C; }
+.beta {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: #545465;
+    position: absolute;
+    left: 500px;
+    top: 133px;
+}
+.button-learn {
+    border-radius: 50px;
+    width: 180px;
+    height: 56px;
+    background: #fe0000;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Poppins-SemiBold', sans-serif;
+    position: absolute;
+    left: 500px;
+    top: 220px;
+    cursor: pointer;
+}
+.foto3 {
+    width: 330px;
+    height: 325px;
+    left: 575px;
+    top: 158px;
+}
+.serum-photo {
+    width: 398px;
+    height: 546px;
+    left: 1042px;
+    top: -75px;
+}
+
+/* Продукты */
+.new-products {
+    font-family: 'Noto Sans ExtraBold', sans-serif;
+    font-size: 48px;
+    position: absolute;
+    left: 77px;
+    top: 1800px;
+    color: #2a2940;
+}
+.filter-list {
+    display: flex;
+    gap: 75px;
+    position: absolute;
+    left: 843px;
+    top: 1825px;
+    font-size: 20px;
+    font-family: 'Noto Sans Medium', sans-serif;
+    color: #545465;
+}
+.all {
+    background: #fa930a;
+    border-radius: 39px;
+    width: 110px;
+    height: 44px;
+    position: absolute;
+    left: 648px;
+    top: 1815px;
+}
+.filter-item-all {
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 44px;
+    padding-left: 10px;
+}
+.filter-item-view_more { margin-left: 20px; }
+.filter-wrapper-border {
+    border: 1px solid #ffa41c;
+    width: 726px;
+    height: 60px;
+    position: absolute;
+    left: 627px;
+    top: 1790px;
+}
+.filter-item-plus {
+    font-size: 30px;
+    left: 1319px;
+    top: 2060px;
+}
+
+/* Сетка продуктов */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 290px);
+    gap: 40px 127px;
+    position: absolute;
+    left: 80px;
+    top: 1950px;
+}
+.products-item {
+    background: white;
+    border-radius: 6px;
+    padding: 20px;
+    text-align: center;
+}
+.products-item img { max-width: 100%; }
+.products-item p {
+    font-family: 'Noto Sans Medium', sans-serif;
+    font-size: 22px;
+    color: #2a2940;
+    margin: 10px 0 5px;
+}
+.products-item .price {
+    font-size: 18px;
+    color: #fa930a;
+}
+.button-learn-tblok {
+    border-radius: 50px;
+    width: 180px;
+    height: 56px;
+    background: #fe0000;
+    border: none;
+    color: white;
+    font-size: 18px;
+    position: absolute;
+    left: 220px;
+    top: 2600px;
+    cursor: pointer;
+}
+
+/* Границы */
+.border-vertik, .border-vertik2, .border-vertik3 {
+    border: 1px solid #fec272;
+    width: 707px;
+    transform: rotate(-90deg);
+    position: absolute;
+}
+.border-vertik { left: -50px; top: 360px; }
+.border-vertik2 { left: 289px; top: 363px; }
+.border-vertik3 { left: 619px; top: 360px; }
+.border-gorizantalno {
+    border: 1px solid #fec272;
+    width: 1273px;
+    position: absolute;
+    top: 395px;
+}
+
+/* Желтый блок */
+.img-girls {
+    position: absolute;
+    left: 80px;
+    top: 3296px;
+}
+.before {
+    font-size: 48px;
+    color: white;
+    font-family: 'Noto Sans Semibold', sans-serif;
+    position: absolute;
+    left: 879px;
+    top: 3365px;
+}
+.text-before {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: rgba(255,255,255,0.8);
+    width: 463px;
+    position: absolute;
+    left: 880px;
+    top: 3430px;
+}
+.button-shop {
+    border-radius: 50px;
+    width: 180px;
+    height: 56px;
+    background: #fe0000;
+    border: none;
+    color: white;
+    font-size: 18px;
+    position: absolute;
+    left: 878px;
+    top: 3570px;
+    cursor: pointer;
+}
+
+/* Отзывы */
+.title-cos {
+    font-size: 48px;
+    font-family: 'Noto Sans ExtraBold', sans-serif;
+    color: #2a2940;
+    position: relative;
+    top: 483px;
+    left: 76px;
+}
+.say { color: #fa930a; }
+.men {
+    width: 510px;
+    height: 504px;
+    position: absolute;
+    left: 80px;
+    top: 4145px;
+}
+.girl {
+    width: 510px;
+    height: 504px;
+    position: absolute;
+    left: 850px;
+    top: 3998px;
+}
+.covachki { left: 465px; top: 4677px; position: absolute; }
+.covachki2 { left: 1252px; top: 4380px; position: absolute; }
+.name {
+    font-size: 24px;
+    font-family: 'Noto Sans Bold', sans-serif;
+    color: #2a2940;
+    position: absolute;
+    left: 82px;
+    top: 4670px;
+}
+.name-girl {
+    font-size: 24px;
+    font-family: 'Noto Sans Bold', sans-serif;
+    color: #2a2940;
+    position: absolute;
+    left: 854px;
+    top: 4470px;
+}
+.star {
+    width: 190px;
+    position: absolute;
+    left: 370px;
+    top: 4673px;
+}
+.star2 {
+    width: 190px;
+    position: absolute;
+    left: 1140px;
+    top: 4526px;
+}
+.text-men {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: #545465;
+    position: absolute;
+    left: 80px;
+    top: 4720px;
+    width: 500px;
+}
+.text-girl {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: #545465;
+    position: absolute;
+    left: 849px;
+    top: 4530px;
+    width: 500px;
+}
+.arrow-ww { left: 817px; top: 4717px; position: absolute; }
+.arrow-redd { left: 911px; top: 4717px; position: absolute; }
+.yzor-vector { left: 1226px; top: 5200px; position: absolute; }
+
+/* Футер */
+.footer-stay {
+    font-family: 'Noto Sans Semibold', sans-serif;
+    font-size: 48px;
+    color: white;
+    position: absolute;
+    left: 474px;
+    top: 5107px;
+    text-align: center;
+}
+.text-footer {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: rgba(255,255,255,0.8);
+    position: absolute;
+    left: 442px;
+    top: 5167px;
+    text-align: center;
+}
+.input {
+    border: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    width: 481px;
+    height: 40px;
+    color: white;
+    position: absolute;
+    left: 484px;
+    top: 5295px;
+    outline: none;
+}
+.input::placeholder {
+    font-family: 'Noto Sans Regular', sans-serif;
+    font-size: 18px;
+    color: rgba(255,255,255,0.6);
+}
+.button-footer {
+    border-radius: 33px;
+    width: 115px;
+    height: 38px;
+    background: #fe0000;
+    border: none;
+    color: white;
+    font-size: 18px;
+    position: absolute;
+    left: 662px;
+    top: 5355px;
+    cursor: pointer;
+}
+.text-infa {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: rgba(255,255,255,0.8);
+    position: absolute;
+    left: 80px;
+    top: 5503px;
+}
+.footer-list {
+    position: absolute;
+    left: 424px;
+    top: 5452px;
+}
+.footer-list li {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: rgba(255,255,255,0.8);
+    margin: 8px 0;
+}
+.footer-list .footer-title {
+    font-size: 24px;
+    color: white;
+    font-family: 'Poppins-SemiBold', sans-serif;
+    margin-bottom: 15px;
+}
+.footer-list-address {
+    position: absolute;
+    left: 660px;
+    top: 5895px;
+}
+.footer-list-address li {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: rgba(255,255,255,0.8);
+    margin: 8px 0;
+}
+.footer-list-address .footer-list-address-h1 {
+    font-size: 24px;
+    color: white;
+}
+.footer-list-messengers {
+    position: absolute;
+    left: 982px;
+    top: 5895px;
+}
+.footer-list-messengers li {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    margin: 8px 0;
+}
+.footer-list-messengers a { color: rgba(255,255,255,0.8); }
+.footer-list-messengers .footer-list-messengers-social {
+    font-size: 24px;
+    color: white;
+}
+.footer-borber {
+    border: 1px solid white;
+    width: 1280px;
+    position: absolute;
+    left: 80px;
+    top: 5684px;
+}
+.list-footer-about {
+    display: flex;
+    gap: 37px;
+    position: absolute;
+    left: 985px;
+    top: 5752px;
+}
+.list-footer-about a {
+    color: rgba(255,255,255,0.8);
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+/* ========== АДАПТАЦИЯ IPHONE 12 ========== */
+@media (max-width: 390px) {
+    /* Сброс всех позиций */
+    .container, .container-men, .container-yellow, .container-footer,
+    .text-content, .description-infa, .buy, .switch-list, .blok,
+    .girls_photo, .title_text, .beta, .button-learn, .foto3, .serum-photo,
+    .new-products, .filter-list, .all, .products-grid, .button-learn-tblok,
+    .img-girls, .before, .text-before, .button-shop, .title-cos,
+    .men, .girl, .name, .name-girl, .star, .star2, .text-men, .text-girl,
+    .footer-stay, .text-footer, .input, .button-footer, .text-infa,
+    .footer-list, .footer-list-address, .footer-list-messengers,
+    .list-footer-about {
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        right: auto !important;
+        bottom: auto !important;
+        margin: 0 auto !important;
+        padding: 0 !important;
+    }
+    
+    /* Контейнеры */
+    .container, .container-men, .container-yellow, .container-footer {
+        width: 100% !important;
+        max-width: 390px !important;
+        height: auto !important;
+        margin: 0 auto !important;
+        padding: 20px 15px !important;
+    }
+    
+    /* Скрываем десктопные элементы */
+    .desktop-only,
+    .frame, .serum_img, .element, .frame2, .girls,
+    .spiral, .elips, .arrow-w, .arrow-red,
+    .foto3, .serum-photo, .photo-gilsmaska,
+    .yzor-vector, .border-vertik, .border-vertik2,
+    .border-vertik3, .border-gorizantalno,
+    .filter-wrapper-border, .filter-item-plus,
+    .covachki, .covachki2, .arrow-ww, .arrow-redd {
+        display: none !important;
+    }
+    
+    /* Шапка */
+    .header_list {
+        padding-left: 0 !important;
+        justify-content: center !important;
+        flex-wrap: wrap !important;
+        gap: 15px !important;
+        padding-top: 15px !important;
+    }
+    .header__auth {
+        position: relative !important;
+        margin: 15px auto !important;
+        display: block !important;
+    }
+    
+    /* Текст */
+    .text-content { text-align: center !important; margin: 20px 0 !important; }
+    .infa {
+        font-size: 40px !important;
+        padding-left: 0 !important;
+    }
+    .text {
+        font-size: 36px !important;
+        padding-left: 0 !important;
+    }
+    .description-infa {
+        text-align: center !important;
+        margin: 20px 0 !important;
+    }
+    .description {
+        font-size: 16px !important;
+        line-height: 1.5 !important;
+    }
+    .buy {
+        display: block !important;
+        text-align: center !important;
+        margin: 20px 0 !important;
+    }
+    
+    /* Точки */
+    .switch-list {
+        justify-content: center !important;
+        gap: 10px !important;
+        margin: 20px 0 !important;
+    }
+    
+    /* Три блока */
+    .blok {
+        grid-template-columns: 1fr !important;
+        gap: 15px !important;
+        margin: 30px 0 !important;
+    }
+    .blok > div {
+        width: 100% !important;
+        height: auto !important;
+        min-height: 180px !important;
+    }
+    
+    /* Второй блок */
+    .girls_photo {
+        width: 100% !important;
+        height: auto !important;
+        margin-bottom: 20px !important;
+    }
+    .title_text {
+        font-size: 28px !important;
+        text-align: center !important;
+        line-height: 1.3 !important;
+    }
+    .beta {
+        font-size: 16px !important;
+        text-align: center !important;
+        margin: 15px 0 !important;
+    }
+    .button-learn {
+        margin: 20px auto !important;
+        display: block !important;
+    }
+    
+    /* Продукты */
+    .new-products {
+        font-size: 32px !important;
+        text-align: center !important;
+        margin: 20px 0 !important;
+    }
+    .filter-wrapper {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        margin: 20px 0 !important;
+    }
+    .all {
+        margin-bottom: 15px !important;
+    }
+    .filter-list {
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 10px 15px !important;
+        font-size: 16px !important;
+    }
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 15px !important;
+        margin: 20px 0 !important;
+    }
+    .products-item {
+        padding: 10px !important;
+    }
+    .products-item p {
+        font-size: 16px !important;
+    }
+    .products-item .price {
+        font-size: 14px !important;
+    }
+    .button-learn-tblok {
+        margin: 20px auto !important;
+        display: block !important;
+    }
+    
+    /* Желтый блок */
+    .container-yellow {
+        margin-top: 30px !important;
+        padding: 30px 15px !important;
+    }
+    .img-girls {
+        width: 100% !important;
+        margin-bottom: 20px !important;
+        text-align: center !important;
+    }
+    .img-girls img {
+        width: 100% !important;
+        height: auto !important;
+    }
+    .before {
+        font-size: 28px !important;
+        text-align: center !important;
+        margin: 15px 0 !important;
+    }
+    .text-before {
+        font-size: 16px !important;
+        text-align: center !important;
+        width: 100% !important;
+        margin: 15px 0 !important;
+    }
+    .button-shop {
+        margin: 20px auto !important;
+        display: block !important;
+    }
+    
+    /* Отзывы */
+    .title-cos {
+        font-size: 28px !important;
+        text-align: center !important;
+        margin: 20px 0 !important;
+    }
+    .testimonial-card {
+        text-align: center !important;
+        margin: 30px 0 !important;
+    }
+    .testimonial-img {
+        width: 100% !important;
+        max-width: 280px !important;
+        height: auto !important;
+        margin: 0 auto 15px !important;
+    }
+    .testimonial-name {
+        font-size: 20px !important;
+        margin: 10px 0 5px !important;
+    }
+    .stars {
+        width: 120px !important;
+        margin: 10px auto !important;
+    }
+    .testimonial-text {
+        font-size: 15px !important;
+        line-height: 1.5 !important;
+        padding: 0 10px !important;
+    }
+    
+    /* Футер */
+    .footer-stay {
+        font-size: 28px !important;
+        text-align: center !important;
+        margin: 20px 0 !important;
+    }
+    .text-footer {
+        font-size: 16px !important;
+        text-align: center !important;
+        margin: 15px 0 !important;
+    }
+    .input {
+        width: 100% !important;
+        margin: 20px 0 !important;
+    }
+    .button-footer {
+        margin: 20px auto !important;
+        display: block !important;
+    }
+    .text-infa {
+        font-size: 16px !important;
+        text-align: center !important;
+        margin: 30px 0 !important;
+    }
+    .footer-nav {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 30px !important;
+        margin: 30px 0 !important;
+    }
+    .footer-list {
+        text-align: center !important;
+    }
+    .footer-list li {
+        margin: 8px 0 !important;
+        font-size: 16px !important;
+    }
+    .footer-list .footer-title {
+        font-size: 20px !important;
+        margin-bottom: 10px !important;
+    }
+    .footer-borber {
+        width: 100% !important;
+        margin: 30px 0 !important;
+    }
+    .footer-bottom {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 15px !important;
+        text-align: center !important;
+    }
+    .footer-bottom a {
+        font-size: 16px !important;
+    }
+}
